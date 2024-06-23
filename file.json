@@ -1,0 +1,37 @@
+{
+  "id": "visualnovel",
+  "name": "Visual Novel",
+  "description": "Create interactive stories.",
+  "blocks": [
+    {
+      "opcode": "showMessage",
+      "blockType": "command",
+      "text": "show message [MESSAGE] with character [CHARACTER]",
+      "arguments": {
+        "MESSAGE": {
+          "type": "string",
+          "defaultValue": "Hello, world!"
+        },
+        "CHARACTER": {
+          "type": "string",
+          "defaultValue": "Character"
+        }
+      }
+    },
+    {
+      "opcode": "chooseOption",
+      "blockType": "command",
+      "text": "choose option [OPTION1] or [OPTION2]",
+      "arguments": {
+        "OPTION1": {
+          "type": "string",
+          "defaultValue": "Option 1"
+        },
+        "OPTION2": {
+          "type": "string",
+          "defaultValue": "Option 2"
+        }
+      }
+    }
+  ]
+}
